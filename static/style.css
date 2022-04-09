@@ -1,0 +1,36 @@
+.text-uno {
+
+}
+.text-dos {
+    color: #5EB1BF;
+}
+.text-cinco {
+    color: #515151;
+}
+.bg-gradient-uno {
+    background-image: linear-gradient(to bottom right, #343A41, #181A1C);
+}
+.bg-gradient-graphite {
+    background-image: linear-gradient(to bottom right, #4B4B4B, #828282);
+}
+.bg-gradient-sunset {
+    background-image: linear-gradient(to bottom right, #F27235, #FDC82F);
+}
+.bg-gradient-ocean {
+    background-image: linear-gradient(to bottom right, #045DE9, #37D5D6);
+}
+.bg-eerie {
+    background-color: #1F1F1F;
+}
+.bg-jet {
+    background-color: #313131;
+}
+.rounded-25 {
+    border-radius: 25px;
+}
+.rounded-half-card {
+    border-radius: 50px 50px 0px 0px;
+}
+.text-align-right {
+    text-align: right;
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}ADP{% endblock %}
+
+{% block content %}
+<div class="">
+    <div class="row">
+        <div class="col-12 text-center text-white rounded py-3 my-3">
+            <img src="/static/meter/{{batteryLevel}}.png" alt="" class="pb-2 w-50">
+            <h6 class="">BATTERY LEVEL</h6>
+            <h1 class="fw-bold">{{batteryLevel}}%</h1>
+            <small class="fw-lighter">{{batteryWh}}Ah</small>
+        </div>
+    </div>
+     <div class="text-align-right text-white pb-3">
+        <a href="/" class="text-decoration-none">
+            <i class="fa-solid fa-retweet"></i>
+        </a>
+        <small class="fw-light fst-italic">Last Refreshed {{ lastRefreshedDateTime }}</small>
+    </div>
+    <div class="row rounded-half-card bg-jet text-white pt-5 pb-2 px-2">
+        <div class="col-12 text-center rounded-25 {{solarColor}} py-4 my-2">
+            <small class="">SOLAR GENERATED</small>
+            <h1 class="">{{solarW}}W</h1>
+        </div>
+        <div class="col-12 text-center rounded-25 {{batteryColor}} py-4 mb-2">
+            <small class="">BATTERY {{batteryStatus}}</small>
+            <h1 class="">{{batteryW}}W</h1>
+        </div>
+        <div class="col-12 text-center rounded-25 {{ecosystemColor}} py-4 mb-2">
+            <small class="">ECOSYSTEM DRAINED</small>
+            <h1 class="">{{ecosystemW}}W</h1>
+        </div>
+    </div>
+</div>
+{% endblock %}
